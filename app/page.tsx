@@ -8,6 +8,8 @@ export default function Home() {
   const [success, setSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const skills = ["Java", "Spring Boot", "Kafka", "PostgreSQL", "React", "Data structures and Algorithms", "LLD", "HLD", "Distributed Systems", "Microservices",
+    "Docker", "Kubernetes", "AWS"];
   return (
 
     <>
@@ -30,21 +32,62 @@ export default function Home() {
           <a
             href="/shanmukha_Anirudh.pdf"
             download
-            className="border px-5 py-2 rounded-lg"
+            className="inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-xl shadow hover:shadow-lg hover:-translate-y-1 transition duration-300"
           >
-            Download Resume
+            📄 Download Resume
           </a>
+
         </motion.section>
 
         <section>
           <h2 className="text-3xl font-semibold mb-6">Skills</h2>
 
-          <div className="flex flex-wrap gap-3">
-            <span className="border px-3 py-1 rounded">Java</span>
-            <span className="border px-3 py-1 rounded">Spring Boot</span>
-            <span className="border px-3 py-1 rounded">Kafka</span>
-            <span className="border px-3 py-1 rounded">PostgreSQL</span>
-            <span className="border px-3 py-1 rounded">React</span>
+          <div className="relative overflow-hidden group h-14 flex items-center">
+
+            {/* LEFT FADE */}
+            <div className="pointer-events-none absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-white to-transparent z-10" />
+
+            {/* RIGHT FADE */}
+            <div className="pointer-events-none absolute right-0 top-0 h-full w-16 bg-gradient-to-l from-white to-transparent z-10" />
+
+            <div className="flex gap-3 animate-scroll group-hover:[animation-play-state:paused]">
+
+              {skills.map((skill, i) => (
+                <span
+                  key={i}
+                  className="px-4 py-2 rounded-full bg-gray-100 text-sm font-medium shrink-0 hover:bg-black hover:text-white transition"
+                >
+                  {skill}
+                </span>
+              ))}
+
+              {skills.map((skill, i) => (
+                <span
+                  key={`dup-${i}`}
+                  className="px-4 py-2 rounded-full bg-gray-100 text-sm font-medium shrink-0"
+                >
+                  {skill}
+                </span>
+              ))}
+
+            </div>
+          </div>
+        </section>
+
+
+        <section>
+          <h2 className="text-3xl font-semibold mb-6">Coding Profiles</h2>
+
+          <div className="flex items-center gap-4">
+
+            <a
+              href="https://leetcode.com/u/parker2399/"
+              target="_blank"
+              className="px-5 py-3 rounded-xl border hover:bg-gray-100 transition"
+            >
+              LeetCode Profile
+            </a>
+
           </div>
         </section>
 
