@@ -28,7 +28,7 @@ export default function Home() {
             Java Backend Developer | Spring Boot | Microservices
           </p>
           <a
-            href="/resume.pdf"
+            href="/shanmukha_Anirudh.pdf"
             download
             className="border px-5 py-2 rounded-lg"
           >
