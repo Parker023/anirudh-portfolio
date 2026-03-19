@@ -16,6 +16,19 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Anirudh | Backend Engineer",
   description: "Portfolio of Anirudh - Java, Spring Boot, Microservices Developer",
+  openGraph: {
+    title: "Anirudh Portfolio",
+    description: "Backend Engineer specializing in Spring Boot and Microservices",
+    url: "https://anirudh-portfolio-henna.vercel.app/",
+    siteName: "Anirudh Portfolio",
+    images: [
+      {
+        url: "/preview.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

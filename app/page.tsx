@@ -9,7 +9,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const skills = ["Java", "Spring Boot", "Kafka", "PostgreSQL", "React", "Data structures and Algorithms", "LLD", "HLD", "Distributed Systems", "Microservices",
-    "Docker", "Kubernetes", "AWS"];
+    "Docker", "Junits", "AWS", "Mockito", "Git", "CI/CD", "Fault Tolerance", "Scalability", "System Design", "gRPC", "Redis"];
   return (
 
     <>
@@ -29,13 +29,7 @@ export default function Home() {
           <p className="mt-4 text-lg text-gray-600">
             Java Backend Developer | Spring Boot | Microservices
           </p>
-          <a
-            href="/shanmukha_Anirudh.pdf"
-            download
-            className="inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-xl shadow hover:shadow-lg hover:-translate-y-1 transition duration-300"
-          >
-            📄 Download Resume
-          </a>
+
 
         </motion.section>
 
@@ -73,7 +67,22 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section>
+          <h2 className="text-3xl font-semibold mb-6">Experience</h2>
 
+          <div className="border-l-2 pl-6 space-y-6">
+
+            <div>
+              <h3 className="text-lg font-semibold">Software Engineer</h3>
+              <p className="text-sm text-gray-500">Clarivate • 2022 – Present</p>
+              <p className="text-gray-600 mt-2">
+                Working on microservices architecture using Spring Boot, Kafka, and gRPC.
+                Built scalable backend systems and optimized API performance.
+              </p>
+            </div>
+
+          </div>
+        </section>
 
         <section>
           <h2 className="text-3xl font-semibold mb-6">Coding Profiles</h2>
@@ -106,7 +115,7 @@ export default function Home() {
 
               <h3 className="text-xl font-bold">Mini-S3</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Built a file storage service using Spring Boot, JWT authentication, and local storage.
+                Designed and implemented a scalable file storage service with authentication, metadata management, and optimized file handling.
                 <br />
                 <a
                   href="https://github.com/Parker023/miniS3"

@@ -6,7 +6,7 @@ export default function Navbar() {
 
         <nav className="flex justify-between items-center p-5 border-b bg-white dark:bg-gray-900 sticky top-0 z-10">
 
-            <h1 className="font-bold text-xl">Anirudh</h1>
+            <h1 className="font-bold text-xl"></h1>
 
             <div className="flex items-center space-x-6">
                 <a href="#projects" className="hover:text-gray-500">Projects</a>
