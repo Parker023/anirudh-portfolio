@@ -29,7 +29,13 @@ export default function Home() {
           <p className="mt-4 text-lg text-gray-600">
             Java Backend Developer | Spring Boot | Microservices
           </p>
-
+         <a
+            href="/shanmukha_Anirudh.pdf"
+            download
+            className="inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-xl shadow hover:shadow-lg hover:-translate-y-1 transition duration-300"
+          >
+          Download Resume
+          </a>
 
         </motion.section>
 
